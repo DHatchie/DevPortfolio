@@ -4,22 +4,22 @@ Welcome to my DevPortfolio project! This project was created as part of a course
 
 ```mermaid
 graph TD
-    A[Portfolio Website Project] --> B((Three.js))
+    A[DevPortfolio Project] --> B((Three.js))
     A --> C((React Three Fiber))
     A --> D((Tailwind CSS))
     A --> E((Framer Motion))
-    B -->|Enables rendering and animating 3D models| F[3D Graphics]
-    C -->|Integrates Three.js into React| F[3D Graphics]
+    B -->|Rendering & Animating 3D models| F[3D Graphics]
+    C -->|Integrate Three.js into React| F[3D Graphics]
     D -->|Utility-first CSS framework| G[Styling]
     E -->|Animations for React| H[Animations]
     F --> I[Stunning Visual Effects]
     F --> J[Interactive Elements]
-    G --> K[Clean and Consistent Design]
-    H --> L[Delightful User Experience]
+    G --> K[Clean-Consistent Design]
+    H --> L[Smooth User Experience]
     A --> M[Form Handling]
-    M -->|Sending emails through a form| N[Email Integration]
+    M -->|Send emails through a form| N[Email Integration]
     A --> O[Responsive Design]
-    O -->|Adapting layout for various devices| P[Layout Adaptation]
+    O -->|Adaptive layout| P[Layout Adaptation]
     A --> Q[Performance Optimization]
     Q -->|Resource management| R[Efficient Resource Handling]
     R -->|Minimizing loading times| S[Fast Loading]
