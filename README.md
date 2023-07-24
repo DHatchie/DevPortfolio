@@ -23,6 +23,7 @@ graph TD
     A --> Q[Performance Optimization]
     Q -->|Resource management| R[Efficient Resource Handling]
     R -->|Minimizing loading times| S[Fast Loading]
+```
 
 ## Technologies and Libraries
 
