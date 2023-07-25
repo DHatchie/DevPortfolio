@@ -43,10 +43,46 @@
   );
 }
 
+.green-tint-gradient {
+  background: #11998E;
+  background: linear-gradient(90deg, #11998E, #38EF7D);
+  background: -webkit-linear-gradient(90deg, #11998E, #38EF7D);
+}
+
+.blue-tint-gradient {
+  background: #13547a;
+  background: linear-gradient(90deg, #13547a, #80d0c7);
+  background: -webkit-linear-gradient(90deg, #13547a, #80d0c7);
+}
+
+.light-bluegreen-tint-gradient {
+  background: #50A7C2;
+  background: linear-gradient(90deg, #B7F8DB, #50A7C2);
+  background: -webkit-linear-gradient(90deg, #B7F8DB, #50A7C2);
+}
+
+.light-greenblue-tint-gradient {
+  background: #B7F8DB;
+  background: linear-gradient(90deg, #50A7C2, #B7F8DB);
+  background: -webkit-linear-gradient(90deg, #50A7C2, #B7F8DB);
+}
+
+.celestial-gradient {
+  background: #DD2476;
+  background: linear-gradient(90deg, #1D2671, #DD2476);
+  background: -webkit-linear-gradient(90deg, #1D2671, #DD2476);
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.gold-white-gradient {
+  background: #ffd700;
+  background: linear-gradient(90deg, #ffd700, #ffffff);
+  background: -webkit-linear-gradient(90deg, #ffd700, #ffffff);
 }
 
 .orange-text-gradient {
@@ -200,5 +236,30 @@
       0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+  }
+}
+.shadow-card {
+  /* Existing shadow properties */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adjust the blur radius and spread radius to make the shadow brighter */
+  /* Increase these values as needed */
+  box-shadow: 0px 8px 30px rgb(255, 0, 132), 0px 4px 8px rgb(111, 0, 255);
+  transition: transform 0.2s ease;
+}
+
+/* Apply the zoom effect when hovering over the card */
+.shadow-card:hover {
+  /* Increase the scale value to zoom in more, 1.05 is a small but noticeable zoom */
+  transform: scale(1.05);
+}
+
+.active {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* On medium screen sizes (e.g., max-width: 768px), add the following media query */
+@media (max-width: 768px) {
+  .grid-cols-5 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
